@@ -10,12 +10,12 @@ from tap_meltano.client import meltanoStream
 class MeltanoJobsStream(meltanoStream):
     """Jobs stream."""
 
-    name = "stream_meltano_jobs"
+    name = "stream_meltano_runs"
     primary_keys = ["id"]
     replication_key = "started_at"
 
     def query(self):
-        return "select * from job order by id ASC"
+        return "select * from runs order by id ASC"
 
     schema = th.PropertiesList(
         th.Property("id", th.StringType),
