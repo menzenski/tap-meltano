@@ -14,7 +14,7 @@ python = "<3.12,>=3.7.1"
 requests = "^2.25.1"
 singer-sdk = "^0.20.0"
 sqlalchemy = "^1.4.27"
-psycopg2 = "^2.9.2"
+psycopg2 = "^2.9.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
